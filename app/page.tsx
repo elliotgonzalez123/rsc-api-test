@@ -1,5 +1,5 @@
 const getData = async () => {
-  const res = await fetch("http://127.0.0.1:3000/api/hello", {
+  const res = await fetch("http://localhost:3000/api/hello", {
     cache: "no-store",
   });
   const data: { message: string } = await res.json();
